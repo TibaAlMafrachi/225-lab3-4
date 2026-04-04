@@ -2,8 +2,8 @@ pipeline {
     agent any 
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'almafrtk-dockerhub'  
-        DOCKER_IMAGE = 'almafrtk/225-lab3-4'                               //<-----change this to your MiamiID!
+        DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'  
+        DOCKER_IMAGE = 'cithit/almarftk'                               //<-----change this to your MiamiID!
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/TibaAlMafrachi/225-lab3-4.git' //<-----change this to match this new repository!
         KUBECONFIG = credentials('almafrtk-225-sp26')                           //<-----change this to match your kubernetes credentials (MiamiID-225)!  1 More change on line 63!
